@@ -1,0 +1,7 @@
+const prompt = require('prompt-sync')({sigint: true});
+
+
+
+let firstName = prompt("Enter you first name.");
+let lastName = prompt("Enter your last name.");
+console.log("Hey, "+ firstName +" "+ lastName +'!');
