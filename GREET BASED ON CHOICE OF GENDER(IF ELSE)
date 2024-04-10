@@ -1,0 +1,13 @@
+
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let gender = prompt("Enter you gender: 'Male' or 'Female'. ");
+
+let choice = gender.toLowerCase();
+
+if(choice=='male'){
+    console.log("Dear sir, How are you this evening?");
+}else{
+    console.log("Dear ma'am, How are you this evening?");
+}
