@@ -1,0 +1,33 @@
+const prompt = require("prompt-sync")({sigint:true});
+
+//user chooses no. elements in array 
+number_of_elements = prompt("Enter the no. of elements in your array.");
+const numbers=[];
+
+//inputs all the array elements 
+for(i=0;i<number_of_elements;i++){
+    numbers[i]= prompt("Enter your "+ i +"th array element ");
+    console.log(numbers[i]);
+}
+
+
+//prints the entered array
+console.log(numbers);
+
+
+//performs a reverse operation on the array elements
+const reversed_numbers = [];
+for(i=0;i<number_of_elements;i++){
+
+    reversed_numbers[(number_of_elements-1)-i]=numbers[i];
+}
+
+
+//prints the reversed array
+    console.log(reversed_numbers);
+
+
+
+
+
+
